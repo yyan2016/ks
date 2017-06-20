@@ -7,7 +7,7 @@ $cook=$_COOKIE['zhang'];
 //数据库类型
 $dbms='mysql';
 //主机名
-$host='liyhe.com';
+$host='localhost';
 //使用的数据库名
 $dbName='ks';
 //phpmyadmin用户名
