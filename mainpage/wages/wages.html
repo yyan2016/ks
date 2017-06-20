@@ -1,74 +1,33 @@
-﻿<html lang="zh">
-	<head>
-		<meta charset"UTF-8">
-		<title>Mainpage</title>
-		<link rel="stylesheet" type="text/css" href="mainpage.css"/>
-		<script src="mainpage.js"></script>
-	</head>
-
-	<body>
-		<div id="main-header">
-			<img id="image" src="./images/HR.png">
-			<div id="a">
-				<A  href="">用户修改</A>
-				<A  href="">退出<A>
-			</div>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <title>Department</title>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="wages.css"/>
+    <script type="text/JavaScript" src="../../jQuery/jquery-1.11.3.js"></script>
+    <script src="wages.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1>薪资管理</h1>
+      <button id="input" type="button" onclick="test1()">添加</button>
+      <button id="input" type="button" onclick="test3()">退出</button>
+    </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-striped">
+      				<thead>
+      					<tr>
+      				    <th>编号</th>
+      				    <th>薪资信息</th>
+      	  			</tr>
+      				</thead>
+      				<tbody>
+      				</tbody>
+      			</table>
+        </div>
+      </div>
 		</div>
-		<div id="main-body">
-			<div id="nav">
-				<div id="nav-department">
-					<img id="mm" src="./images/department.png">
-					<a href="./department/department.html">
-            <p>部门管理</p>
-					</a>
-					<div id="text">负责对部门信息进行添加、查询及删除操作。</div>
-				</div>
-				<div id="nav-department">
-					<img id="mm" src="./images/staff.png">
-					<a href="./staff/staff.html">
-				  	<p>员工管理</p>
-					</a>
-					<div id="text">负责对员工信息进行添加、修改、查询及删除操作。</div>
-				</div>
-				<div id="nav-department">
-					<img id="mm" src="./images/recruit.png">
-					<a href="./recruit/recruit.html">
-						<p>招聘管理</p>
-					</a>
-					<div id="text">负责对招聘人信息进行添加、查询、删除及录用操作。注意:选择“录用”按钮后，对该录用人的详细信息进行添加操作。</div>
-				</div>
-				<div id="nav-department">
-					<img id="mm" src="./images/train.png">
-					<a href="./train/train.html">
-				 		<p>培训管理</p>
-					</a>
-					<div id="text">负责对培训信息进行添加、查询及删除操作。</div>
-				</div>
-				<div id="nav-department">
-					<img id="mm" src="./images/reward-punishment.png">
-					<a href="./reward-punishment/reward-punishment.html">
-						<p>奖惩管理</p>
-					</a>
-					<div id="text">负责对奖惩信息进行添加、查询及删除操作。</div>
-				</div>
-				<div id="nav-department">
-					<img id="mm" src="./images/wages.png">
-					<a href="./wages/wages.html">
-						<p>薪资管理</p>
-					</a>
-					<div id="text">负责对薪资信息进行添加、查询及删除操作。</div>
-				</div>
-				<div id="nav-department">
-					<img id="mm" src="./images/system-manager.png">
-					<a href="./system-manager/system-manager.html">
-						<p>系统管理</p>
-					</a>
-					<div id="text">负责对管理员信息进行添加、查询、删除操作。</div>
-				</div>
-			</div>
-		</div>
-		<div id="mian-footer">
-		</div>
-	</body>
-
+   </body>
 </html>
