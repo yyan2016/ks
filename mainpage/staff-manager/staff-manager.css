@@ -11,20 +11,20 @@ body{
   margin: 0;
   background-color: #fff;
     }
-
+	
 #login-01{
 	position: absolute;
 	width: 350px;
-	height: 300px;
+	height: 400px;
 	border:solid 1px #c0c0c0;
 	top: 30%;
 	left:40%;
 	box-shadow: 0px 0px 5px #c0c0c0;
-}
+}	
 
 #login{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left:50%;
   margin: -150px 0 0 -150px;
   width: 300px;

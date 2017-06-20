@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script type="text/JavaScript" src="./jQuery/jquery-1.11.3.js"></script>
     <script src="index.js"></script>
   </head>
   <body>
 	<div id="login-01">
 		<div id="login">
 		<h1>登陆</h1>
-		  <form name=form1 method="post" action="" onsubmit="return test()">
-			<input type="text" required="required" placeholder="用户名" name="u"></input>
-			<input type="password" required="required" placeholder="密码" name="p"></input>
-			<input type="text" required="required" placeholder="联系方式" name="t"></input>
-			<input type="text" required="required" placeholder="E-MAIL" name="e"></input>
-			<button class="but" type="submit">登陆</button>
-			<A href="">还没有帐号？请注册..</a>
+		  <form name=form1 method="post">
+			<input type="text" required="required" placeholder="用户名" id="u"></input>
+			<input type="password" required="required" placeholder="密码" id="p"></input>
+			<button class="but" type="button" onclick="test()">登陆</button>
 		  </form>
 		</div>
 	</div>

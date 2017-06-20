@@ -1,26 +1,23 @@
 function test()
 {
-  var checkok="0123456789";
-  var checkstr=document.form1.t.value;
-  var allvalid=true;
-  if(checkstr.length!=11)
-    allvalid=false;
-  else {
-    for (var i = 0; i < 11; i++) {
-      ch=checkstr.charAt(i);
-      if(checkok.indexOf(ch)==-1)
-      {
-        allvalid=false;
-        break;
-      }
+  var na=document.form1.u.value;
+  var pass=document.form1.p.value;
+  var judge=false;
+
+  P(na,pass,judge);
+}
+
+function P(na,pass,judge){
+  //发送数据到php文件
+   var url="./index.php";
+   $.post(url,{
+     'name':na,'password':pass
+   },function(data){
+    //  judge=data;
+    if(data=='true'){
+      window.location.href='./mainpage/mainpage.html';
+    }else{
+      alert('您输入的账户或者密码有误！')
     }
-    }
-    if (!allvalid) {
-      document.all.form1.t.style.color="red";
-      alert("您的联系方式有误!");
-      return false;
-    }
-    else {
-      document.all.form1.t.style.color="black";
-    }
+  });
 }
