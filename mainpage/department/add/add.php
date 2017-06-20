@@ -8,13 +8,13 @@ echo($name1+'\n');
 //数据库类型
 $dbms='mysql';
 //主机名
-$host='localhost';
+$host='liyhe.com';
 //使用的数据库名
 $dbName='ks';
 //phpmyadmin用户名
 $user='root';
 //密码
-$pass='hnustlihe';
+$pass='liyhe/16-014851';
 $dsn="$dbms:host=$host;dbname=$dbName";
 $dbh = new PDO($dsn,$user,$pass);
 var_dump($dbh);
