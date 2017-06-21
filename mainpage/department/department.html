@@ -5,12 +5,19 @@
     <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="department.css"/>
     <script type="text/JavaScript" src="../../jQuery/jquery-1.11.3.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="department.js"></script>
   </head>
   <body>
     <div id="header">
+      <a href="./department.html">
       <h1>部门管理</h1>
+      </a>
       <button id="input" type="button" onclick="test1()">添加</button>
+      <div id="s">
+        <input id="u"></input>
+        <button id="u1" type="button" onclick="test4()">搜索</button>
+      </div>
       <button id="input" type="button" onclick="test3()">退出</button>
     </div>
       <div class="container-fluid">
@@ -29,5 +36,27 @@
         </div>
       </div>
 		</div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">信息修改</h4>
+          </div>
+          <div class="modal-body" id="w2">
+            <form name=form2 method="post">
+            <input type="text" required="required" placeholder="ID" id="u2"></input>
+      			<input type="text" required="required" placeholder="部门名称" id="p2"></input>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button id="w3" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button id="w3" type="button" class="btn btn-primary" onclick="test5()">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
    </body>
 </html>

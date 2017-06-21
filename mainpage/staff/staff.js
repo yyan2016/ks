@@ -16,7 +16,7 @@ $(function(){
       //  document.getElementById("1").innerHTML=item.id;
       // // console.log(item.id);
       //  document.getElementById("2").innerHTML=item.name1;
-      var html="<tr><td>"+item.id+"</td><td>"+item.name1+"</td><td><button  id='"+item.id+"' type='button' onclick='test2(this)'>删除</button></td></tr>";
+      var html="<tr><td>"+item.id+"</td><td>"+item.name1+"</td><td>"+item.phone+"</td><td>"+item.email+"</td><td><button  id='"+item.id+"' type='button' onclick='test2(this)'>删除</button></td></tr>";
       $("tbody").append(html);
     })
 })

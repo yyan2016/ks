@@ -1,10 +1,11 @@
 <html lang="zh">
   <head>
     <meta charset="UTF-8">
-    <title>Department</title>
+    <title>Recruit</title>
     <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="recruit.css"/>
     <script type="text/JavaScript" src="../../jQuery/jquery-1.11.3.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="recruit.js"></script>
   </head>
   <body>
@@ -19,8 +20,8 @@
             <table class="table table-striped">
       				<thead>
       					<tr>
-      				    <th>招聘编号</th>
-      				    <th>招聘详情</th>
+      				    <th>编号</th>
+      				    <th>详情</th>
       	  			</tr>
       				</thead>
       				<tbody>
@@ -29,5 +30,29 @@
         </div>
       </div>
 		</div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">录用信息添加</h4>
+          </div>
+          <div class="modal-body" >
+            <form name=form3 method="post" id="w4">
+            <input type="text" required="required" placeholder="编号" id="u3"></input>
+            <input type="text" required="required" placeholder="姓名" id="p3"></input>
+            <input type="text" required="required" placeholder="电话" id="x3"></input>
+            <input type="text" required="required" placeholder="邮箱" id="y3"></input>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button id="w3" type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button id="w3" type="button" class="btn btn-primary" onclick="test7()">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
    </body>
 </html>

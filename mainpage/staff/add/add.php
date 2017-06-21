@@ -1,9 +1,9 @@
 <?php
 $id=$_POST['id'];
 $name1=$_POST['name1'];
+$phone=$_POST['phone'];
+$email=$_POST['email'];
 $cook=$_COOKIE['zhang'];
-echo($id+'\n');
-echo($name1+'\n');
 //json.d()
 //数据库类型
 $dbms='mysql';
@@ -18,7 +18,7 @@ $pass='liyhe/16-014851';
 $dsn="$dbms:host=$host;dbname=$dbName";
 $dbh = new PDO($dsn,$user,$pass);
 var_dump($dbh);
-$result=$dbh->query("INSERT INTO staff (name,id,name1) values ('".$cook."','".$id."','".$name1."')");
+$result=$dbh->query("INSERT INTO staff (name,id,name1,phone,email) values ('".$cook."','".$id."','".$name1."','".$phone."','".$email."')");
 //echo("INSERT INTO department (name,id,name1) values ('".$cook."','".$id."','".$name1."')");
 var_dump($result);
 ?>
