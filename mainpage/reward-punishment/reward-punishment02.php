@@ -8,11 +8,11 @@ echo "1111";
   //主机名
   $host='localhost';
   //使用的数据库名
-  $dbName='ks';
+  $dbName='XX';
   //phpmyadmin用户名
   $user='root';
   //密码
-  $pass='liyhe/16-014851';
+  $pass='XXXXX';
   $dsn="$dbms:host=$host;dbname=$dbName";
 
   $dbh = new PDO($dsn,$user,$pass);
